@@ -3,8 +3,8 @@
 「Supabase + GitHub で仮アプリを作れるか」を検証するプロジェクト（2026-10-09 開始）。題材は備品メモ。
 
 ## 役割分担（所属長確認中のため変更の可能性あり）
-- Claude：コード・migration（`supabase/migrations/*.sql`）を作成し、作業ブランチへ push してプルリクエストを作成するまで。
-- 利用者：プルリクエストの確認とマージのみ。
+- Claude：コード・migration（`supabase/migrations/*.sql`）を作成し、作業ブランチへ push するまで。push 後にプルリクエスト作成用リンクを伝える。
+- 利用者：プルリクエストの作成とマージ。
 - Supabase：GitHub連携により main へのマージで migration を本番DBへ反映。
 
 ## 守ること

@@ -1,0 +1,2 @@
+# Supabase CLI / GitHub連携用の設定（最小構成。未記載の項目は既定値）
+project_id = "supabase-poc"

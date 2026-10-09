@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "deny": [
+      "Bash(npx supabase db push:*)",
+      "Bash(npx supabase db reset:*)",
+      "Bash(npx supabase migration up:*)",
+      "Bash(npx supabase migration repair:*)",
+      "Bash(supabase db push:*)",
+      "Bash(supabase db reset:*)",
+      "Bash(supabase migration up:*)",
+      "Bash(supabase migration repair:*)",
+      "Bash(psql:*)",
+      "Bash(git push origin main:*)",
+      "Bash(git push --force:*)",
+      "Bash(git push -f:*)"
+    ]
+  }
+}

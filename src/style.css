@@ -1,0 +1,30 @@
+body {
+  font-family: "Yu Gothic UI", "Meiryo", sans-serif;
+  background: #f6f7f9;
+  color: #222;
+  margin: 0;
+}
+main {
+  max-width: 640px;
+  margin: 32px auto;
+  padding: 0 16px;
+}
+.note {
+  color: #a33;
+  font-size: 0.9em;
+}
+form {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+input {
+  flex: 1 1 160px;
+  padding: 6px 8px;
+}
+button {
+  padding: 6px 16px;
+}
+ul {
+  padding-left: 20px;
+}

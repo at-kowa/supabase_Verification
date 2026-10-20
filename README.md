@@ -38,6 +38,27 @@ supabase db push
 
 `app/index.html` を Edge で開きます（ダブルクリックで開けます）。
 
+## Vercel で公開する（準備済み・未公開）
+
+Vercel で公開できる形にしてあります。ビルド時に `scripts/write-config.mjs` が、Vercel に登録した値から `config.js` を作ります（`vercel.json` で設定済み）。
+
+> **公開の前に必ず**：今はログインなしで誰でも読み書きできる設定です。ログイン機能を付けて RLS を本人の行だけに絞るか、Vercel のアクセス制限をかけてから公開してください。アクセス制限なしで公開しないでください。
+
+### 本人が行う手順（Vercel の管理画面）
+
+1. **会社のメールアドレス**で Vercel に登録します（無料の Hobby プランは試作・検証用。業務での本番運用は会社の有償チームで行う）。
+2. 「Add New…」→「Project」で、GitHub の `at-kowa/supabase_Verification` を取り込みます。
+3. 「Framework Preset」は **Other** のままにします（ビルドの設定は `vercel.json` に書いてあります）。
+4. 「Environment Variables」に次の2つを登録します。
+
+   | Key | Value |
+   |---|---|
+   | `SUPABASE_URL` | `https://xxxx.supabase.co`（`/rest/v1` は付けない） |
+   | `SUPABASE_ANON_KEY` | anon / publishable キー |
+
+   secret キーや service_role キーを登録すると、ビルドがエラーで止まるようにしてあります。
+5. アクセス制限を確認してから「Deploy」します。
+
 ## 注意
 
 - リポジトリは Public です。タスク名に業務の内容や個人情報を書かないでください。

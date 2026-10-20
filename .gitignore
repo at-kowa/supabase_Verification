@@ -2,6 +2,7 @@
 .env
 .env.*
 !.env.example
+app/config.js
 
 # Node.js
 node_modules/

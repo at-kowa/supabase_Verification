@@ -30,6 +30,9 @@
       "Read(./.env)",
       "Read(./.env.*)",
       "Edit(./.env)",
+      "Read(./app/config.js)",
+      "Edit(./app/config.js)",
+      "Read(./supabase/.temp/**)",
       "Edit(./.github/workflows/**)"
     ]
   }

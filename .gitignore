@@ -1,0 +1,20 @@
+# 接続キー（絶対に commit しない）
+.env
+.env.*
+!.env.example
+
+# Node.js
+node_modules/
+dist/
+
+# supabase CLI のローカル作業ファイル
+supabase/.temp/
+supabase/.branches/
+
+# Claude Code の個人設定
+.claude/settings.local.json
+
+# OS / エディタ
+Thumbs.db
+.DS_Store
+.vscode/
